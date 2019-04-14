@@ -40,8 +40,7 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<List<GithubRepo>> call, Response<List<GithubRepo>> response) {
                 List<GithubRepo> repos = response.body();
 
-                // error error: cannot find symbol class GithubRepoAdapter
-                listView.setAdapter(new GithubRepoAdapter(MainActivity.this, repos));
+                listView.setAdapter(new GitHubRepoAdapter(MainActivity.this, repos));
             }
 
             @Override
